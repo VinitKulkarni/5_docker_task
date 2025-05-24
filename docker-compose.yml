@@ -3,6 +3,7 @@ version: '3.9'
 services:
   frontend:
     build: ./frontend
+    image: vinitkulkarni/frontend:latest
     container_name: frontend
     hostname: frontend
     environment:
@@ -16,6 +17,7 @@ services:
 
   backend:
     build: ./backend
+    image: vinitkulkarni/backend:latest
     container_name: backend
     hostname: backend
     ports:
