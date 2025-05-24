@@ -4,13 +4,20 @@ cd 5_docker_task
 cd frontend
 npm init -y (to get package.json)
 npm install express (to get node_modules)
+NOTE: if npm not found. $sudo apt install npm
+cd ..
+cd backend
+[create .env file and paste the mongodb url]
 cd ..
 docker-compose up
-
--------
-
+--------------------------------------------------------------------
 if some frontend related issues with axios or express or body-parser
 $npm install experss body-parser axios
 
 if some backend related issues with flask or flask-cors or pymongo
 $pip install flask flask-cors pymongo
+--------------------------------------------------------------------
+To push the docker-image to docker registry:
+docker login
+docker push vinitkulkarni/frontend:latest
+docker push vinitkulkarni/backend:latest
