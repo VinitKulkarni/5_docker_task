@@ -1,0 +1,16 @@
+how to run the project:
+git clone https://github.com/VinitKulkarni/5_docker_task.git
+cd 5_docker_task
+cd frontend
+npm init -y (to get package.json)
+npm install express (to get node_modules)
+cd ..
+docker-compose up
+
+-------
+
+if some frontend related issues with axios or express or body-parser
+$npm install experss body-parser axios
+
+if some backend related issues with flask or flask-cors or pymongo
+$pip install flask flask-cors pymongo
